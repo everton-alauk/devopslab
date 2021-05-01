@@ -5,3 +5,10 @@ install:
   - pip install flask
 script:
   - python -m unittest -v test
+deploy:
+  provider: heroku
+  api_key: $HEROKU_API_KEY
+  edge: true 
+  app: $PROJECT_NAME
+  on:
+      branch: main

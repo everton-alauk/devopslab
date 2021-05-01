@@ -1,0 +1,5 @@
+coverage==5.5
+Flask==1.1.2
+pytest==6.2.3
+pytest-cov==2.11.1
+gunicorn==20.1.0
